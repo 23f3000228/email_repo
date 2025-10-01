@@ -1,0 +1,21 @@
+name: Email in Action Step
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: 23f3000228@ds.study.iitm.ac.in
+        run: |
+          echo "This step contains my email address"
+          echo "Current date: $(date)"
+          
+      - name: Regular step
+        run: echo "Workflow completed successfully"
